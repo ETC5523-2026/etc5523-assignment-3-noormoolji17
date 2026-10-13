@@ -134,3 +134,20 @@ ggplot(plot_data, aes(y = infection)) +
     plot.caption        = element_text(hjust = 0, colour = "grey40")
   )
 ```
+
+### How can "safer" Germany lose more?
+
+@tbl-compare shows how the answer flips depending on which number you look at.
+
+```{r}
+#| label: tbl-compare
+#| tbl-cap: "Germany has a lower infection rate among hospital patients than the EU/EEA average, but more infections and more healthy life lost across its whole population. Which looks better depends on the number you choose."
+
+tribble(
+  ~Measure,                                   ~Germany, ~`EU/EEA`, ~`Looks better`,
+  "Infections per 100 hospital patients",      "2.40",   "2.83",    "Germany",
+  "Infections per 100,000 people",             "592.1",  "467.9",   "EU/EEA",
+  "Healthy years lost per 100,000 people",     "308.2",  "290.0",   "EU/EEA"
+) |>
+  knitr::kable(align = "lccc")
+```
