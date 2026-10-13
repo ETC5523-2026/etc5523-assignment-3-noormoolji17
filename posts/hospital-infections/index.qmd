@@ -27,7 +27,7 @@ has the bigger problem?
 
 The second, surely. And on the surface, it's not wrong, fewer patients getting infected *does* sound like the safer, better-performing system.
 
-But when I looked a little deeper, the answer flipped. The first place is Germany, the second isthe European average, and by one important measure, Germany actually came out *worse*.
+But when I looked a little deeper, the answer flipped. The first place is Germany, the second is the European average, and by one important measure, Germany actually came out *worse*.
 
 Some patients pick up a new infection while they're in hospital, such as
 pneumonia, a bloodstream infection or a urinary tract infection. These
@@ -175,3 +175,22 @@ So, which infections do the most harm? Pneumonia and bloodstream infections: onl
 
 What stuck with me is how many times the story changed as I kept looking. Count cases, and urinary tract infections look like the biggest problem. Compare hospital rates, and Germany looks like a success. Measure healthy life lost, and Germany looks worse. Check the uncertainty, and even that
 difference might not be real.
+
+
+::: {.callout-tip}
+## How to question a number
+- **Ask what's being counted.** Cases, deaths and years of healthy life are different things.
+- **Ask "out of how many?"** A good rate across a big group can still mean a big total.
+- **Check how sure it is.** A precise-looking number can hide a wide range.
+- **Separate "likely" from "proven".** A suggested reason isn't a confirmed cause.
+:::
+
+
+Next time a statistic looks obvious, pause and question it. It might be answering a different question from the one you actually care about.
+
+## References
+
+::: {#refs}
+:::
+
+
