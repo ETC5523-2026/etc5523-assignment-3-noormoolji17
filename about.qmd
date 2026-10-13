@@ -1,13 +1,40 @@
 ---
-title: "About"
-image: profile.jpg
+title: "Noor Fatima Moolji"
+image: profile.png
 about:
-  template: jolla
+  template: trestles
+  image-shape: rounded
+  image-width: 14em
   links:
     - icon: github
-      text: Github
-      href: https://github.com/etc5523-2022
-
+      text: GitHub
+      href: https://github.com/noormoolji17
+    - icon: envelope
+      text: Email
+      href: mailto:noormoolji17@gmail.com
 ---
 
-This is a blog template for the ETC5523 Communicating with Data assessment at Monash University.
+Hi, I'm **Noor**, a Masters of Business Analytics student at Monash University. This is where I share what I'm learning about data and how to communicate it clearly.
+
+**Likes:**
+
+- Clean datasets.
+- A chart that renders on the first try.
+- Coffee strong enough to fix a merge conflict.
+
+**Dislikes:**
+
+- Pie charts with 14 slices.
+- The word "miscellaneous" in a column name.
+- `Error: object not found`.
+
+**Strengths:**
+
+- Can explain a confidence interval to my mum. She still doesn't care, but she understands.
+- Very good at looking calm while R loads 2 GB of data.
+
+**Weaknesses:**
+
+- Spending 40 minutes Googling an error that was a missing comma.
+- Spending too much time making the chart pretty and not enough time writing the report.
+- Opening 37 browser tabs "for research".
