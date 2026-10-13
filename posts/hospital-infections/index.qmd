@@ -4,7 +4,7 @@ subtitle: "Why the number you pick changes the story"
 author: "Noor Fatima Moolji"
 date: "2026-10-13"
 categories: [health, data, DALYs]
-bibliography: references.bib¸
+bibliography: references.bib
 execute:
   echo: false
   warning: false
@@ -65,10 +65,6 @@ But how *common* an infection is and how much *harm* it causes are two very diff
 
 In @fig-share, each arrow starts at an infection's share of cases and ends at its share of theharm. Bloodstream infections are only about 6% of cases but cause almost a quarter of the harm.Urinary tract infections are the opposite: nearly half of all cases, but only about a quarter of the harm. Together, pneumonia and bloodstream infections make up just 28% of cases but about half of all healthy life lost.
 
-``{r}
-#| label: fig-share
-#| fig-cap: "Each arrow runs from an infection's share of cases to its share of the harm (healthy years of life lost). Blue arrows mark infections that cause more harm than their case numbers suggest."
-#| fig-alt: "Arrow chart for five infection types in Germany, 2011. Bloodstream infection rises from 6% of cases to 23% of harm and pneumonia from 22% to 28%. Urinary tract infection falls from 45% of cases to 27% of harm and surgical site infection from 19% to 12%. C. difficile stays at about 8%."
 
 ```{r}
 #| label: fig-share
@@ -76,6 +72,7 @@ In @fig-share, each arrow starts at an infection's share of cases and ends at it
 #| fig-height: 5
 #| fig-cap: "Each arrow runs from an infection's share of cases to its share of the harm (healthy years of life lost). Blue arrows mark infections that cause more harm than their case numbers suggest; C. difficile causes about the same share of each."
 #| fig-alt: "Arrow chart for five infection types in Germany, 2011. Bloodstream infection rises from 6% of cases to 23% of harm and pneumonia from 22% to 28%. Urinary tract infection falls from 45% of cases to 27% of harm and surgical site infection from 19% to 12%. C. difficile is about 8% of both."
+#| echo: false
 
 # Annual estimates for Germany, 2011 (Zacher et al. 2019, Table 1)
 infections <- tribble(
