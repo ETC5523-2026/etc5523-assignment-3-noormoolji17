@@ -48,3 +48,16 @@ That leaves two questions:
 
 1. **Which infections cause the most harm?**
 2. **If German patients are less likely to get infected, how can Germany lose more healthy life?**
+
+## What the evidence shows
+
+### Where the data comes from
+
+@zacher2019 used a one-day survey of **9,626 patients in 46 German hospitals** from 2011, chosen to represent hospitals of different sizes. 
+
+They compared it with the same survey run across 29 European countries in 2011–2012, covering more than 273,000 patients. To turn these surveys into
+estimates of harm for a whole country, they built a free tool called BHAI.[^bhai]
+
+[^bhai]: BHAI stands for "Burden of Healthcare-Associated Infections". It's an R package anyone can download from CRAN.
+
+
