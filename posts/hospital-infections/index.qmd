@@ -4,6 +4,7 @@ subtitle: "Why the number you pick changes the story"
 author: "Noor Fatima Moolji"
 date: "2026-10-13"
 categories: [health, data, DALYs]
+image: thumbnail.png
 bibliography: references.bib
 execute:
   echo: false
