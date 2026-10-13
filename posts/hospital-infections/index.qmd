@@ -8,6 +8,9 @@ execute:
   echo: false
   warning: false
   message: false
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
 ```{r}
@@ -15,4 +18,34 @@ execute:
 library(tidyverse)
 ```
 
+## The Problem
 
+Quick question. In one place, 2.4 out of every 100 hospital patients
+catch an infection during their stay. In another, it's 2.8. Which one
+has the bigger problem?
+
+The second, surely. That's what I thought too, until I read a study that
+flipped the answer. The first place is Germany, the second is the
+European average, and by one important measure, Germany came out
+*worse*.
+
+Some patients pick up a new infection while they're in hospital, such as
+pneumonia, a bloodstream infection or a urinary tract infection. These
+are called **healthcare-associated infections**. But not all infections
+are equal. A urinary tract infection is common but usually mild, while a
+bloodstream infection is rarer but can be deadly. So researchers measure
+harm a different way.
+
+::: callout-note
+## What's a DALY?
+
+A **disability-adjusted life year (DALY)** is one year of healthy life
+lost, whether from dying early or living with illness. It lets us
+compare a common, mild infection with a rare, deadly one on the same
+scale.
+:::
+
+That leaves two questions:
+
+1. **Which infections cause the most harm?**
+2. **If German patients are less likely to get infected, how can Germany lose more healthy life?**
