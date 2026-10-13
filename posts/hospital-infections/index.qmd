@@ -151,3 +151,20 @@ tribble(
 ) |>
   knitr::kable(align = "lccc")
 ```
+
+Think of it like two roads. On Road A, 3 in every 100 cars crash, but only 1,000 cars use it eachday, so that's **30 crashes**. Road B is safer: only 2.4 in every 100 cars crash. But it's a busy highway with 3,000 cars a day, so that's **72 crashes**. Road B is the safer road *per car*, yet
+it still has more crashes overall, simply because so many more cars drive on it.
+
+Germany is Road B. Each patient's chance of catching an infection is lower (the crash rate), but far more people go into hospital (the traffic), so the total harm across the country (the number of crashes) ends up higher.
+
+
+::: {.callout-warning collapse="true"}
+## How sure can we be? (click to expand)
+These numbers are estimates, and some are quite uncertain. Germany's harm could be anywhere from
+about 221 to 416 healthy years lost per 100,000 people, and Europe's from about 215 to 377. Those
+ranges overlap, so the study can't say for certain that Germany is really worse.
+
+The authors also note that some of the evidence linking infections to deaths and disability is
+weak, and that using a different group of German hospitals raised the total from about 249,000 to
+290,000 healthy years lost.
+:::
