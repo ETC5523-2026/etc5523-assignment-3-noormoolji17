@@ -4,6 +4,7 @@ subtitle: "Why the number you pick changes the story"
 author: "Noor Fatima Moolji"
 date: "2026-10-13"
 categories: [health, data, DALYs]
+bibliography: references.bib¸
 execute:
   echo: false
   warning: false
@@ -60,4 +61,79 @@ estimates of harm for a whole country, they built a free tool called BHAI.[^bhai
 
 [^bhai]: BHAI stands for "Burden of Healthcare-Associated Infections". It's an R package anyone can download from CRAN.
 
+But how *common* an infection is and how much *harm* it causes are two very different things.
 
+In @fig-share, each arrow starts at an infection's share of cases and ends at its share of theharm. Bloodstream infections are only about 6% of cases but cause almost a quarter of the harm.Urinary tract infections are the opposite: nearly half of all cases, but only about a quarter of the harm. Together, pneumonia and bloodstream infections make up just 28% of cases but about half of all healthy life lost.
+
+``{r}
+#| label: fig-share
+#| fig-cap: "Each arrow runs from an infection's share of cases to its share of the harm (healthy years of life lost). Blue arrows mark infections that cause more harm than their case numbers suggest."
+#| fig-alt: "Arrow chart for five infection types in Germany, 2011. Bloodstream infection rises from 6% of cases to 23% of harm and pneumonia from 22% to 28%. Urinary tract infection falls from 45% of cases to 27% of harm and surgical site infection from 19% to 12%. C. difficile stays at about 8%."
+
+```{r}
+#| label: fig-share
+#| fig-width: 8
+#| fig-height: 5
+#| fig-cap: "Each arrow runs from an infection's share of cases to its share of the harm (healthy years of life lost). Blue arrows mark infections that cause more harm than their case numbers suggest; C. difficile causes about the same share of each."
+#| fig-alt: "Arrow chart for five infection types in Germany, 2011. Bloodstream infection rises from 6% of cases to 23% of harm and pneumonia from 22% to 28%. Urinary tract infection falls from 45% of cases to 27% of harm and surgical site infection from 19% to 12%. C. difficile is about 8% of both."
+
+# Annual estimates for Germany, 2011 (Zacher et al. 2019, Table 1)
+infections <- tribble(
+  ~infection,                ~cases,  ~dalys,
+  "Pneumonia",               106586,  69508,
+  "Urinary tract infection", 214150,  66701,
+  "Bloodstream infection",    26976,  58350,
+  "Surgical site infection",  93222,  28842,
+  "C. difficile infection",   36002,  20890
+)
+
+plot_data <- infections |>
+  mutate(
+    cases_pct = cases / 478222 * 100,
+    harm_pct  = dalys / 248920 * 100,
+    more_harm = harm_pct > cases_pct,
+    same      = abs(harm_pct - cases_pct) < 1,   # less than 1 point apart
+    infection = fct_reorder(infection, harm_pct)
+  )
+
+changed <- filter(plot_data, !same)
+
+ggplot(plot_data, aes(y = infection)) +
+  # Arrows only where the share really changes
+  geom_segment(
+    data = changed,
+    aes(x = cases_pct, xend = harm_pct, yend = infection, colour = more_harm),
+    arrow = arrow(length = unit(0.25, "cm")), linewidth = 1.2
+  ) +
+  geom_point(aes(x = cases_pct), colour = "grey50", size = 3) +
+  # Share of cases (grey)
+  geom_text(aes(x = cases_pct,
+                label = if_else(same,
+                                paste0(round(cases_pct), "% of both (about the same)"),
+                                paste0(round(cases_pct), "%")),
+                hjust = case_when(same ~ -0.1, more_harm ~ 1.4, TRUE ~ -0.4)),
+            colour = "grey40", size = 3.5) +
+  # Share of harm (coloured)
+  geom_text(data = changed,
+            aes(x = harm_pct, label = paste0(round(harm_pct), "%"),
+                hjust = if_else(more_harm, -0.4, 1.4), colour = more_harm),
+            size = 3.5, fontface = "bold") +
+  scale_colour_manual(values = c("TRUE" = "#2a5d8f", "FALSE" = "#a89c88")) +
+  scale_x_continuous(limits = c(0, 52), labels = function(x) paste0(x, "%")) +
+  labs(
+    title    = "Some infections cause far more harm\nthan their case numbers suggest",
+    subtitle = "Dot = share of cases, arrowhead = share of healthy life lost",
+    x = NULL, y = NULL,
+    caption  = "Source: Zacher et al. (2019), Germany, 2011"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    legend.position     = "none",
+    panel.grid.major.y  = element_blank(),
+    panel.grid.minor    = element_blank(),
+    plot.title.position = "plot",
+    plot.caption.position = "plot",
+    plot.title          = element_text(face = "bold"),
+    plot.caption        = element_text(hjust = 0, colour = "grey40")
+  )
+```
