@@ -1,0 +1,18 @@
+---
+title: "Fewer Infections & More Harm: The German Hospital Paradox"
+subtitle: "Why the number you pick changes the story"
+author: "Noor Fatima Moolji"
+date: "2026-10-13"
+categories: [health, data, DALYs]
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: setup
+library(tidyverse)
+```
+
+
