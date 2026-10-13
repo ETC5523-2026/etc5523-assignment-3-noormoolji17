@@ -168,3 +168,10 @@ The authors also note that some of the evidence linking infections to deaths and
 weak, and that using a different group of German hospitals raised the total from about 249,000 to
 290,000 healthy years lost.
 :::
+
+## Conclusion: question the numbers you see
+
+So, which infections do the most harm? Pneumonia and bloodstream infections: only about a quarterof cases, but half of all the healthy life lost. And how can "safer" Germany lose more? Because arate among hospital patients and a total across a whole country answer different questions, andGermany's large hospital population may tip the balance [@zacher2019].
+
+What stuck with me is how many times the story changed as I kept looking. Count cases, and urinary tract infections look like the biggest problem. Compare hospital rates, and Germany looks like a success. Measure healthy life lost, and Germany looks worse. Check the uncertainty, and even that
+difference might not be real.
