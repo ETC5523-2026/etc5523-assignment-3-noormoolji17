@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Noor Fatima Moolji",
+    "section": "",
+    "text": "Hi, I’m Noor, a Masters of Business Analytics student at Monash University. This is where I share what I’m learning about data and how to communicate it clearly.\nLikes:\n\nClean datasets.\nA chart that renders on the first try.\nCoffee strong enough to fix a merge conflict.\n\nDislikes:\n\nPie charts with 14 slices.\nThe word “miscellaneous” in a column name.\nError: object not found.\n\nStrengths:\n\nCan explain a confidence interval to my mum. She still doesn’t care, but she understands.\nVery good at looking calm while R loads 2 GB of data.\n\nWeaknesses:\n\nSpending 40 minutes Googling an error that was a missing comma.\nSpending too much time making the chart pretty and not enough time writing the report.\nOpening 37 browser tabs “for research”."
+  },
+  {
+    "objectID": "posts/hospital-infections/index.html",
+    "href": "posts/hospital-infections/index.html",
+    "title": "Fewer Infections & More Harm: The German Hospital Paradox",
+    "section": "",
+    "text": "Quick question. In one place, 2.4 out of every 100 hospital patients catch an infection during their stay. In another, it’s 2.8. Which one has the bigger problem?\nThe second, surely. And on the surface, it’s not wrong, fewer patients getting infected does sound like the safer, better-performing system.\nBut when I looked a little deeper, the answer flipped. The first place is Germany, the second is the European average, and by one important measure, Germany actually came out worse.\nSome patients pick up a new infection while they’re in hospital, such as pneumonia, a bloodstream infection or a urinary tract infection. These are called healthcare-associated infections. But not all infections are equal. A urinary tract infection is common but usually mild, while a bloodstream infection is rarer but can be deadly. So researchers measure harm a different way.\n\n\n\n\n\n\nNoteWhat’s a DALY?\n\n\n\nA disability-adjusted life year (DALY) is one year of healthy life lost, whether from dying early or living with illness. It lets us compare a common, mild infection with a rare, deadly one on the same scale.\n\n\nThat leaves two questions:\n\nWhich infections cause the most harm?\nIf German patients are less likely to get infected, how can Germany lose more healthy life?"
+  },
+  {
+    "objectID": "posts/hospital-infections/index.html#the-problem",
+    "href": "posts/hospital-infections/index.html#the-problem",
+    "title": "Fewer Infections & More Harm: The German Hospital Paradox",
+    "section": "",
+    "text": "Quick question. In one place, 2.4 out of every 100 hospital patients catch an infection during their stay. In another, it’s 2.8. Which one has the bigger problem?\nThe second, surely. And on the surface, it’s not wrong, fewer patients getting infected does sound like the safer, better-performing system.\nBut when I looked a little deeper, the answer flipped. The first place is Germany, the second is the European average, and by one important measure, Germany actually came out worse.\nSome patients pick up a new infection while they’re in hospital, such as pneumonia, a bloodstream infection or a urinary tract infection. These are called healthcare-associated infections. But not all infections are equal. A urinary tract infection is common but usually mild, while a bloodstream infection is rarer but can be deadly. So researchers measure harm a different way.\n\n\n\n\n\n\nNoteWhat’s a DALY?\n\n\n\nA disability-adjusted life year (DALY) is one year of healthy life lost, whether from dying early or living with illness. It lets us compare a common, mild infection with a rare, deadly one on the same scale.\n\n\nThat leaves two questions:\n\nWhich infections cause the most harm?\nIf German patients are less likely to get infected, how can Germany lose more healthy life?"
+  },
+  {
+    "objectID": "posts/hospital-infections/index.html#what-the-evidence-shows",
+    "href": "posts/hospital-infections/index.html#what-the-evidence-shows",
+    "title": "Fewer Infections & More Harm: The German Hospital Paradox",
+    "section": "What the evidence shows",
+    "text": "What the evidence shows\n\nWhere the data comes from\nZacher et al. (2019) used a one-day survey of 9,626 patients in 46 German hospitals from 2011, chosen to represent hospitals of different sizes.\nThey compared it with the same survey run across 29 European countries in 2011–2012, covering more than 273,000 patients. To turn these surveys into estimates of harm for a whole country, they built a free tool called BHAI.1\nBut how common an infection is and how much harm it causes are two very different things.\nIn Figure 1, each arrow starts at an infection’s share of cases and ends at its share of theharm. Bloodstream infections are only about 6% of cases but cause almost a quarter of the harm.Urinary tract infections are the opposite: nearly half of all cases, but only about a quarter of the harm. Together, pneumonia and bloodstream infections make up just 28% of cases but about half of all healthy life lost.\n\n\n\n\n\n\n\n\nFigure 1: Each arrow runs from an infection’s share of cases to its share of the harm (healthy years of life lost). Blue arrows mark infections that cause more harm than their case numbers suggest; C. difficile causes about the same share of each.\n\n\n\n\n\n\n\nHow can “safer” Germany lose more?\nTable 1 shows how the answer flips depending on which number you look at.\n\n\n\n\nTable 1: Germany has a lower infection rate among hospital patients than the EU/EEA average, but more infections and more healthy life lost across its whole population. Which looks better depends on the number you choose.\n\n\n\n\n\n\n\n\n\n\n\n\nMeasure\nGermany\nEU/EEA\nLooks better\n\n\n\n\nInfections per 100 hospital patients\n2.40\n2.83\nGermany\n\n\nInfections per 100,000 people\n592.1\n467.9\nEU/EEA\n\n\nHealthy years lost per 100,000 people\n308.2\n290.0\nEU/EEA\n\n\n\n\n\n\n\n\nThink of it like two roads. On Road A, 3 in every 100 cars crash, but only 1,000 cars use it eachday, so that’s 30 crashes. Road B is safer: only 2.4 in every 100 cars crash. But it’s a busy highway with 3,000 cars a day, so that’s 72 crashes. Road B is the safer road per car, yet it still has more crashes overall, simply because so many more cars drive on it.\nGermany is Road B. Each patient’s chance of catching an infection is lower (the crash rate), but far more people go into hospital (the traffic), so the total harm across the country (the number of crashes) ends up higher.\n\n\n\n\n\n\nWarningHow sure can we be? (click to expand)\n\n\n\n\n\nThese numbers are estimates, and some are quite uncertain. Germany’s harm could be anywhere from about 221 to 416 healthy years lost per 100,000 people, and Europe’s from about 215 to 377. Those ranges overlap, so the study can’t say for certain that Germany is really worse.\nThe authors also note that some of the evidence linking infections to deaths and disability is weak, and that using a different group of German hospitals raised the total from about 249,000 to 290,000 healthy years lost."
+  },
+  {
+    "objectID": "posts/hospital-infections/index.html#conclusion-question-the-numbers-you-see",
+    "href": "posts/hospital-infections/index.html#conclusion-question-the-numbers-you-see",
+    "title": "Fewer Infections & More Harm: The German Hospital Paradox",
+    "section": "Conclusion: question the numbers you see",
+    "text": "Conclusion: question the numbers you see\nSo, which infections do the most harm? Pneumonia and bloodstream infections: only about a quarterof cases, but half of all the healthy life lost. And how can “safer” Germany lose more? Because arate among hospital patients and a total across a whole country answer different questions, andGermany’s large hospital population may tip the balance (Zacher et al. 2019).\nWhat stuck with me is how many times the story changed as I kept looking. Count cases, and urinary tract infections look like the biggest problem. Compare hospital rates, and Germany looks like a success. Measure healthy life lost, and Germany looks worse. Check the uncertainty, and even that difference might not be real.\n\n\n\n\n\n\nTipHow to question a number\n\n\n\n\nAsk what’s being counted. Cases, deaths and years of healthy life are different things.\nAsk “out of how many?” A good rate across a big group can still mean a big total.\nCheck how sure it is. A precise-looking number can hide a wide range.\nSeparate “likely” from “proven”. A suggested reason isn’t a confirmed cause.\n\n\n\nNext time a statistic looks obvious, pause and question it. It might be answering a different question from the one you actually care about."
+  },
+  {
+    "objectID": "posts/hospital-infections/index.html#references",
+    "href": "posts/hospital-infections/index.html#references",
+    "title": "Fewer Infections & More Harm: The German Hospital Paradox",
+    "section": "References",
+    "text": "References\n\n\nZacher, Benedikt, Sebastian Haller, Niklas Willrich, Jan Walter, Muna Abu Sin, Alessandro Cassini, Diamantis Plachouras, et al. 2019. “Application of a New Methodology and R Package Reveals a High Burden of Healthcare-Associated Infections (HAI) in Germany Compared to the Average in the European Union/European Economic Area, 2011 to 2012.” Eurosurveillance 24 (46): 1900135. https://doi.org/10.2807/1560-7917.ES.2019.24.46.1900135."
+  },
+  {
+    "objectID": "posts/hospital-infections/index.html#footnotes",
+    "href": "posts/hospital-infections/index.html#footnotes",
+    "title": "Fewer Infections & More Harm: The German Hospital Paradox",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nBHAI stands for “Burden of Healthcare-Associated Infections”. It’s an R package anyone can download from CRAN.↩︎"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ETC5523 Blog Assessment",
+    "section": "",
+    "text": "Fewer Infections & More Harm: The German Hospital Paradox\n\n\nWhy the number you pick changes the story\n\n\n\nhealth\n\ndata\n\nDALYs\n\n\n\n\n\n\n\n\n\nOct 13, 2026\n\n\nNoor Fatima Moolji\n\n\n\n\n\nNo matching items"
+  }
+]
