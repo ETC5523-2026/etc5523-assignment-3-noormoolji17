@@ -24,10 +24,9 @@ Quick question. In one place, 2.4 out of every 100 hospital patients
 catch an infection during their stay. In another, it's 2.8. Which one
 has the bigger problem?
 
-The second, surely. That's what I thought too, until I read a study that
-flipped the answer. The first place is Germany, the second is the
-European average, and by one important measure, Germany came out
-*worse*.
+The second, surely. And on the surface, it's not wrong, fewer patients getting infected *does* sound like the safer, better-performing system.
+
+But when I looked a little deeper, the answer flipped. The first place is Germany, the second isthe European average, and by one important measure, Germany actually came out *worse*.
 
 Some patients pick up a new infection while they're in hospital, such as
 pneumonia, a bloodstream infection or a urinary tract infection. These
