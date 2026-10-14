@@ -3,7 +3,7 @@
 
 The author of this blog is **Noor Fatima Moolji**.
 The URL for this blog is [https://etc5523-2026.github.io/etc5523-assignment-3-noormoolji17/](https://etc5523-2026.github.io/etc5523-assignment-3-noormoolji17/)
-
+The intended audience is curious everyday readers who come across health statistics in the news but have no background in health or statistics.
 A personal Quarto blog for ETC5523 Communicating with Data (Assignment 3), by Noor Fatima Moolji.
 
 ## What's here
