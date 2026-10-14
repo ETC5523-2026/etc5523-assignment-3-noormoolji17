@@ -14,7 +14,7 @@ about:
       href: mailto:noormoolji17@gmail.com
 ---
 
-Hi, I'm **Noor**, a Masters of Business Analytics student at Monash University. This is where I share what I'm learning about data and how to communicate it clearly.
+Hi, I'm **Noor**, a Masters of Business Analytics student at Monash University. I call this blog *Fieldnotes* because every post starts with a hunch and ends with whatever the numbers actually say.
 
 **Likes:**
 
