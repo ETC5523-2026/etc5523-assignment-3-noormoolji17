@@ -1,4 +1,74 @@
 /* css styles */
-.navbar-dark, .quarto-title-banner {
-  background-color: #006DAE;
+/*-- scss:defaults --*/
+
+/* Named colours*/
+:root {
+  --ink: #222222;       /* body text */
+  --paper: #fafafa;     /* page background: soft off-white */
+  --charcoal: #1f2937;  /* headings and navbar */
+  --link: #b45309;      /* links: deep amber */
+  --hover: #fbbf24;     /* navbar hover: bright amber */
+  --soft: #d6d3d1;      /* thin lines */
+}
+
+/* Page background and body text */
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+}
+
+/* Headings: dark and readable */
+h1, h2, h3, h4, .title, .listing-title {
+  color: var(--charcoal);
+}
+
+/* Subtle line under section headings in posts */
+#quarto-document-content h2 {
+  border-bottom: 1px solid var(--soft);
+  padding-bottom: 0.2em;
+}
+
+/* Links in the page content */
+#quarto-content a {
+  color: var(--link);
+}
+
+#quarto-content a:hover {
+  color: var(--charcoal);
+}
+
+/* Navbar: dark with white text */
+#quarto-header .navbar {
+  background-color: var(--charcoal);
+}
+
+#quarto-header .navbar-title,
+#quarto-header .navbar-brand,
+#quarto-header .nav-link,
+#quarto-header .bi {
+  color: #ffffff;
+}
+
+/* Navbar hover and current page: bright amber, clearly visible */
+#quarto-header .navbar-brand:hover,
+#quarto-header .navbar-brand:hover .navbar-title,
+#quarto-header .nav-link:hover,
+#quarto-header .nav-link:hover .bi,
+#quarto-header .nav-link.active {
+  color: var(--hover);
+}
+
+#quarto-header .nav-link:hover,
+#quarto-header .nav-link.active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+}
+
+/* Visible focus outline for keyboard users */
+#quarto-header .nav-link:focus-visible,
+#quarto-header .navbar-brand:focus-visible {
+  outline: 2px solid var(--hover);
+  outline-offset: 2px;
+  box-shadow: none;
 }
